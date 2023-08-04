@@ -1,79 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Menu - Faça a Sua Escolha</title>
 </head>
+
 <body>
 
     <div class="container">
-<div class="imagens">
-    <img src="home.jpg" alt="Comidas">
+        <div class="imagens">
+            <img src="home.jpg" alt="Comidas">
 
-</div>
-<h2>Menu - Faça A Sua Escolha</h2>
-<div class="Prato_principal">
-    <h3>Prato Principal</h3>
-    <h4>Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</h4>
-    <div>
- 
-        <img src="bife.jpg" alt="bife">
-        <h4>Bife com batata</h4>
-        <h3>R$ 30,00</h3>
-    </div>
-    <div>
-       
-        <img src="coxa.jpg" alt="coxa">
-        <h4>Coxa de Frango Crocante</h4>
-        <h3>R$ 25,00</h3>
-    </div>
-    <div>
-        <img src="panela.jpg" alt="panela">
-        <h4>Carne de Pamela</h4>
-        <h3>R$ 22,00</h3>
-    </div>
+        </div>
+        <h2>Menu - Faça A Sua Escolha</h2>
+<div class="conteudo">
+        <div class="title_pratos">
+            <h3>Prato Principal</h3>
+            <h4>Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</h4>
+        </div>
+        <div class="prato_principal">
+            <div class="comidas">
 
-</div>
+                <img src="bife.jpg" alt="bife" class="imgB">
+                <h4>Bife com batata</h4>
+                <h3 class="preco">R$ 30,00</h3>
+            </div>
+            <div class="comidas">
 
+                <img src="coxa.jpg" alt="coxa" class="imgB">
+                <h4>Coxa de Frango Crocante</h4>
+                <h3 class="preco">R$ 25,00</h3>
+            </div>
+            <div class="comidas">
+                <img src="panela.jpg" alt="panela" class="imgB">
+                <h4>Carne de Pamela</h4>
+                <h3 class="preco">R$ 22,00</h3>
+            </div>
 
-<div class="Acompanhamento">
-    <h3>Acompanhamentos</h3>
-    <h4>Porções para uma pessoa</h4>
-    <div>
-        <img src="farofa.jpg" alt="farofa">
-        <h4>Farofa</h4>
-        <h3>R$ 10,00</h3>
-    </div>
-    <div>
-        <img src="salad.jpg" alt="salada">
-        <h4>Salada</h4>
-        <h3>R$ 8,00</h3>
-    </div>
-    <div>
-        <img src="torresmo.jpg" alt="torresmo">
-        <h4>Torresmo</h4>
-        <h3>R$ 12,00</h3>
-    </div>
-
-</div>
-
-<div class="Dados_pessoais">
-<h3>Dados pessoais</h3>
-
-<input placeholder="Digite o seu nome" type="text">
-<input placeholder="Digite o seu telefone" type="text">
-<input placeholder="Digite o seu email" type="email">
-</div>
-
-<button>Calcular</button>
-
-
-<div id="output"></div>
+        </div>
 
     </div>
+    <div class="conteudo">
+        <div class="title_acompanhamento">
+            <h3>Acompanhamentos</h3>
+            <h4>Porções para uma pessoa</h4>
+        </div>
+
+        <div class="acompanhamento">
+            <div class="comidas">
+                <img src="farofa.jpg" alt="farofa" class="imgB">
+                <h4>Farofa</h4>
+                <h3 class="preco">R$ 10,00</h3>
+            </div>
+            <div class="comidas">
+                <img src="salad.jpg" alt="salada" class="imgB">
+                <h4>Salada</h4>
+                <h3 class="preco">R$ 8,00</h3>
+            </div>
+            <div class="comidas">
+                <img src="torresmo.jpg" alt="torresmo" class="imgB">
+                <h4>Torresmo</h4>
+                <h3 class="preco">R$ 12,00</h3>
+            </div>
+
+        </div>
+    </div>
+        <div class="dados_pessoais">
+            <h3>Dados pessoais</h3>
+
+            <input placeholder="Digite o seu nome" type="text">
+            <input placeholder="Digite o seu telefone" type="text">
+            <input placeholder="Digite o seu email" type="email">
+        </div>
+
+        <button>Calcular</button>
 
 
-    
+        <div id="output"></div>
+
+    </div>
+
+
+
 </body>
+
 </html>
