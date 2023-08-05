@@ -157,3 +157,20 @@ border-radius: 7px;
 .quantity.buttons_added .plus:focus {
     outline: none;
 }
+
+.output{
+    
+    text-align: start;
+    margin-right: 25%;
+    margin-left: 20px;
+}
+
+.negrito{
+    
+    font-weight: bold ;
+}
+
+.title_name{
+    display: flex;
+    flex-direction: row;
+}

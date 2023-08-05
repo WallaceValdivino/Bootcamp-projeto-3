@@ -113,15 +113,15 @@
         <div class="dados_pessoais">
             <h3>Dados pessoais</h3>
 
-            <input placeholder="Digite o seu nome" type="text">
-            <input placeholder="Digite o seu telefone" type="text">
+            <input id="nome" placeholder="Digite o seu nome" type="text">
+            <input id="phone" placeholder="Digite o seu telefone" type="text">
             <input placeholder="Digite o seu email" type="email">
         </div>
 
         <button onclick="calc()">Calcular</button>
 
 
-        <div id="output"></div>
+        <div class="output" id="output"></div>
 
     </div>
 
@@ -130,7 +130,9 @@
     <script src="js/jquery.mask.min.js"> </script>
     <script src="js/quantity.js"> </script>
     <script src="js/javascript.js"> </script>
-
+    <script>
+        $("#phone").mask("(99) 9999-99999");
+    </script>
 
 </body>
 

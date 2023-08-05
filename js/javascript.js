@@ -11,22 +11,27 @@ function calc(){
     var quantities = document.getElementsByName("quantity");
     var output     = document.getElementById("output");
     var total      = 0;
-    
+    var nome = document.getElementById("nome");
     output.innerHTML = "";
    
     var formatter = new Intl.NumberFormat('pt-BR', {
         style: 'currency',
         currency: 'BRL',
     });
+    output.innerHTML += `<div class="title_name">Caro&nbsp;<div class="negrito">${nome.value}</div><br><br><br>`;
 
+
+output.innerHTML+=`Seguem os dados do seu pedido. </br></br>`;
+
+output.innerHTML+=`O seu pedido é: </br></br>`;
     for (var input of quantities) {
         var id = input.id;
-
-        output.innerHTML += `Produto: ${prods[id-1].name}  - Preço: ${formatter.format(prods[id-1].price)} - Quantidade: ${input.value} </br>`;
+if(input.value>0){
+        output.innerHTML += `Prato: ${prods[id-1].name}  - Preço Unitário: ${formatter.format(prods[id-1].price)} - Quantidade: ${input.value} - Total ${formatter.format(prods[id-1].price * parseFloat(input.value))}. </br>`;
         total            += prods[id-1].price * parseFloat(input.value);
     }
-
-    output.innerHTML += `<h2>Total: ${formatter.format(total)}</h2>`;
+    }
+    output.innerHTML += `</br></br><h2>Preço final: ${formatter.format(total)}</h2><br><br>`;
 
 }
 
