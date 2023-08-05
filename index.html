@@ -27,17 +27,38 @@
                 <img src="bife.jpg" alt="bife" class="imgB">
                 <h4>Bife com batata</h4>
                 <h3 class="preco">R$ 30,00</h3>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+
             </div>
             <div class="comidas">
 
                 <img src="coxa.jpg" alt="coxa" class="imgB">
                 <h4>Coxa de Frango Crocante</h4>
                 <h3 class="preco">R$ 25,00</h3>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+
             </div>
             <div class="comidas">
                 <img src="panela.jpg" alt="panela" class="imgB">
                 <h4>Carne de Pamela</h4>
                 <h3 class="preco">R$ 22,00</h3>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="" id="3" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+
             </div>
 
         </div>
@@ -54,16 +75,37 @@
                 <img src="farofa.jpg" alt="farofa" class="imgB">
                 <h4>Farofa</h4>
                 <h3 class="preco">R$ 10,00</h3>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="" id="4" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+
             </div>
             <div class="comidas">
                 <img src="salad.jpg" alt="salada" class="imgB">
                 <h4>Salada</h4>
                 <h3 class="preco">R$ 8,00</h3>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="" id="5" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+
             </div>
             <div class="comidas">
                 <img src="torresmo.jpg" alt="torresmo" class="imgB">
                 <h4>Torresmo</h4>
                 <h3 class="preco">R$ 12,00</h3>
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="" id="6" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+
             </div>
 
         </div>
@@ -76,13 +118,18 @@
             <input placeholder="Digite o seu email" type="email">
         </div>
 
-        <button>Calcular</button>
+        <button onclick="calc()">Calcular</button>
 
 
         <div id="output"></div>
 
     </div>
 
+    <script src="js/jquery-3.6.0.min.js"> </script>
+
+    <script src="js/jquery.mask.min.js"> </script>
+    <script src="js/quantity.js"> </script>
+    <script src="js/javascript.js"> </script>
 
 
 </body>
